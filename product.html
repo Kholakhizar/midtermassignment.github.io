@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+.navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 10px;
+            list-style: none;
+            margin: 9px ;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+            float: right;
+            padding: 8px 50px;
+        }
+
+        .navbar input{
+            border: 2.8px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 14px;
+        }
+
+        span{
+            color: rgb(255, 140, 0);
+           
+        }
+        .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 50px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 17px;
+            font-weight:bold;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 110px;
+            display: flex;
+        }
+        .logo{
+            width: 25%;
+        }
+        .text{
+            width: 50%;
+        
+        }
+        .imageclass
+{
+    background: url(..\midtermassignment.github.io\images\kk.jpeg);
+    background-size: cover;
+    height: 600px;
+}
+        .pen
+        {
+            text-align: center;
+            float: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 150px;
+            
+            font-family: 'Open Sans, Arial, sans-serif';
+            color: #fff;
+
+        }
+        .fact
+        {
+            float: center;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+            font-style: italic;
+            font-stretch: normal;
+            margin-top: 70px;
+            margin-left: 50px;
+            margin-right:50px;
+            font-weight: bolds;
+            color: #fff;
+        }
+        
+        #footer
+{
+    margin-top: 40px;
+    background-color: gray;
+  height: 200px;
+  border-radius: 15px;
+
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a{ font-size: 20px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 20px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.copyright
+{
+    justify-content: center;
+    align-items: center;
+    color:rgb(214, 214, 214);
+}
+
+.list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: aliceblue;}
+    .contact
+    {
+        min-height: 50vh;
+        padding: 60px;
+        text-align: center;
+        background-color: rgb(170, 218, 219);
+        border-radius: 15px;
+        }
+        .contain{
+max-width: 800px;
+margin: 0 auto;
+
+
+        }
+        .contain h2
+        {font-size: 36px;
+        margin-bottom: 40px;
+    color: #333;
+    }
+    .contact-wrapper
+    {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 30px;
+    }
+    .contact-form
+    {
+        text-align: left;
+    }
+    .contact-form h3
+    {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    
+    }
+    .form-group
+    {
+        margin-bottom: 20px;
+    }
+       input , textarea
+    {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        border-color: #f8f9fa;
+        color: #333;
+    }
+    input:focus , textarea:focus
+    {
+        outline: none;
+        box-shadow: 0 0 8px #424242 ;
+
+    }
+    button
+    {
+        display: inline-block;
+        padding: 6px 24px;
+        background-color: rgb(255, 146, 14);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    button:hover
+    {
+        background-color:rgb(255, 208, 151) ;
+    }
+     .classinfo
+    {
+        text-align: center;
+    }
+
+    
+    .classinfo h3
+    {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+    }
+    .classinfo p
+    {
+        margin-bottom: 10px;
+        color: #555;
+    }
+    .classinfo i
+    { 
+        color: rgb(170, 218, 219);
+        margin-right: 10px;
+       
+     
+    }
+    .no
+    {width: 10%;}
+    .heading
+    {
+        background-color: rgb(71, 129, 131);
+        width: 80%;
+        justify-content: center;
+    align-items: center
+    }
+    .box-1
+    {
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .box-3
+    {
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .box-2
+    {text-align: center;
+        padding: 5px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .box-4
+    {text-align: center;
+        padding: 5px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .box-11
+    {text-align: center;
+        float: left;
+        margin-top: 20px;
+        margin-left: 90px;
+        padding: 5px;
+    }
+    .box-31
+    {text-align: center;
+        float: left;
+        margin-top: 20px;
+        margin-left: 90px;
+        padding: 5px;
+    }
+    .box-21
+    {text-align: center;
+        float: left;
+        margin-top: 20px;
+        margin-left: 90px;
+        padding: 5px;
+    }
+    .box-41
+    {text-align: center;
+        padding: 5px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    .yes
+    {
+        display: flex;
+    }
+        .bag
+        {
+            float: left;
+            text-align: left;
+            font-size: 20px;
+            font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+            font-style: italic;
+            font-stretch: normal;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+        .box
+        {
+            display: flex;
+            font-size: 13px;
+        }
+
+</style>
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="    Search this website">
+                </div>
+                </ul> 
+                </nav>
+<div class="bar">
+        <div class="logo"> 
+            <img src="..\midtermassignment.github.io\images\cat logo copy 22.png" alt="" width="130px" height="120px">
+            </div>
+            <div class="text">
+                <center>
+                <h1>Mastering <span> Cat </span> Care</h1>
+                </center>
+            
+                <center>
+                <p>An &nbsp; Easy &nbsp; Guide &nbsp; To &nbsp; Winning &nbsp; Your &nbsp; Cat's  &nbsp;Heart</p>
+                </center>
+            </div>
+             <div class="btn" class="">
+                <a href="donate.html">DONATE</a>
+                </div>
+                </div>
+            </div>
+<div id="section">
+    <br>
+    <div class="imageclass">
+        <br>
+
+        <div class="pen">
+            <h1><b><i>MASTER CAT CARE'S TREATS</i></b></h1>
+            <h3><b><i></i></b></h3>
+        </div>
+        <div class="fact">
+            <p>MASTER CAT CARE’S TREATS COME IN A VARIETY OF DIFFERENT
+                 FLAVORS TO SATISFY ALL YOUR CAT’S CRAVINGS. WHETHER SHE 
+                 PREFERS SOFT OR CRUNCHY TREATS OR YOU PREFER NATURAL CAT 
+                 SNACKS, THERE’S A LITTLE SOMETHING FOR EVERY FELINE. .</p>
+        </div>
+    </div>
+<div class="product">
+    <br>
+      <hr>
+    <div class="yes">
+      <div class="no"></div>
+      <div class="heading">
+      <center><h1>OUR PRODUCTS</h1></center>
+      </div>
+      <div class="no"></div>
+    </div>
+    <hr><br>
+    <p></p>
+</div>
+<div class="box">
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\1.jpeg" alt="" width="200px" height="250px">
+        <h3>Fancy Feast <br>Purely Natural<br> Salmon Cat Treats</h3>
+        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+    </div>
+    <div class="box-2">
+        <img src="..\midtermassignment.github.io\images\2.jpeg" alt="" width="200px" height="250px">
+        <h3>Fancy Feast <br>Purely Natural<br> Tuna Cat Treats</h3>
+        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+    </div>
+    <div class="box-3">
+        <img src="..\midtermassignment.github.io\images\9.jpeg" alt="" width="200px" height="250px">
+        <h3>Fancy Feast Savory Purée <br> Naturals With Natural<br> Tuna Cat Treats</h3>
+        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+    </div>
+    <div class="box-4">
+        <img src="..\midtermassignment.github.io\images\10.jpeg" alt="" width="200px" height="250px">
+        <h3>Fancy Feast Purely<br> Natural Hand-Selected<br> Chicken Cat Treats</h3>
+        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+    </div>
+        </div>
+        <hr>
+                <div class="box">
+                    <div class="box-1">
+                        <img src="..\midtermassignment.github.io\images\3.jpeg" alt="" width="200px" height="280px">
+                        <h3>Fancy Feast Savory Purée <br>Naturals With Natural <br>Tuna In A Demi-Glace<br> Cat Treats</h3>
+                        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                    </div>
+                    <div class="box-2">
+                        <img src="..\midtermassignment.github.io\images\4.jpeg" alt="" width="200px" height="280px">
+                        <h3>Fancy Feast Savory Purée<br> Naturals With Natural<br> Salmon & Tuna In A <br>Demi-Glace Cat Treats</h3>
+                        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                    </div>
+                    <div class="box-3">
+                        <img src="..\midtermassignment.github.io\images\5.jpeg" alt="" width="200px" height="280px">
+                        <h3>Fancy Feast Savory Purée<br> Naturals With Natural<br> Chicken In A Demi-Glace<br> Cat Treat</h3>
+                    
+                        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                    </div>
+                    <div class="box-4">
+                        <img src="..\midtermassignment.github.io\images\34.jpeg" alt="" width="200px" height="280px">
+                        <h3>Friskies Party Mix<br> Chicken Lovers Crunch <br>With Real Chicken<br> Cat Treats</h3>
+                        <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                    </div>
+                     
+                        </div>
+<hr>
+                        <div class="box">
+                            <div class="box-1">
+                                <img src="..\midtermassignment.github.io\images\13.jpeg" alt="" width="200px" height="250px">
+                                <h3>Friskies Party Mix<br> Beachside Crunch With <br>Ocean Whitefish & Flavors<br> of Shrimp, Crab &<br> Tuna Cat Treats</h3>
+                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                            </div>
+                            <div class="box-2">
+                                <img src="..\midtermassignment.github.io\images\18.jpeg" alt="" width="200px" height="250px">
+                                <h3>Friskies Party<br> Mix Lobster<br> & Mac ‘N’<br> Cheese Flavors<br> Cat Treats</h3>
+                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                            </div>
+                            <div class="box-3">
+                                <img src="..\midtermassignment.github.io\images\19.jpeg" alt="" width="200px" height="250px">
+                                <h3>Friskies Party<br> Mix Picnic Crunch<br> With Chicken & Flavors<br> of Turkey & Cheddar<br> Cat Treats</h3>
+                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                            </div>
+                            <div class="box-4">
+                                <img src="..\midtermassignment.github.io\images\16.jpeg" alt="" width="200px" height="250px">
+                                <h3>Friskies Party <br>Mix Meow Luau Crunch<br> With Ocean Whitefish &<br> Flavors of Pork & <br>Crab Cat Treats</h3>
+                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                            </div>
+                             
+                                </div>
+<hr>
+ <div class="box">
+  <div class="box-1">
+  <img src="..\midtermassignment.github.io\images\n2.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix<br> Natural Yums With <br>Real Chicken<br> Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+   <div class="box-2">
+  <img src="..\midtermassignment.github.io\images\14.jpeg" alt="" width="200px" height="250px">
+   <h3>Friskies Party Mix<br> Natural Yums With <br>Real Salmon<br> Cat Treats</h3>
+    <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+     </div>
+    <div class="box-3">
+  <img src="..\midtermassignment.github.io\images\n1.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party <br>Mix Natural <br>Yums Catnip <br>Cat Treats</h3>
+   <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+   </div>
+ <div class="box-4">
+<img src="..\midterm\midtermassignment.github.io\images\20.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix <br>Natural Yums With <br>Real Pumpkin<br> Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+</div>
+<hr>
+<hr>
+ <div class="box">
+  <div class="box-1">
+  <img src="..\midtermassignment.github.io\images\25.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Playfuls With <br>Real Salmon and<br> Shrimp Flavor<br> Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+   <div class="box-2">
+  <img src="..\midtermassignment.github.io\images\15.jpeg" alt="" width="200px" height="250px">
+   <h3>Friskies Playfuls With <br>Real Chicken and <br>Liver Flavor<br> Cat Treats</h3>
+    <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+     </div>
+    <div class="box-3">
+  <img src="..\midtermassignment.github.io\images\17.jpeg" alt="" width="200px" height="250px">
+  <h3>	
+    Friskies Natural<br> Yums Party Mix<br>Cat Treats<br> with Real Tuna</h3>
+   <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+   </div>
+ <div class="box-4">
+<img src="..\midtermassignment.github.io\images\w2.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Natural<br> Yums Party Mix<br> Cat Treats <br>with Real Shrimp</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+</div>
+
+<hr>
+ <div class="box">
+  <div class="box-1">
+  <img src="..\midtermassignment.github.io\images\26.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party  California<br>Crunch With Chicken<br> & Flavors of Turkey &<br> Bacon Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+   <div class="box-2">
+  <img src="..\midtermassignment.github.io\images\27.jpeg" alt="" width="200px" height="250px">
+   <h3>Friskies Party Mix Cheezy<br> Craze Crunch Cheddar,<br> Swiss & Monterey Jack<br> Flavors Cat Treats</h3>
+    <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+     </div>
+    <div class="box-3">
+  <img src="..\midtermassignment.github.io\images\28.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix<br> Gravy-licious Chicken<br> & Gravy Flavors<br> Cat Treats</h3>
+   <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+   </div>
+ <div class="box-4">
+<img src="..\midtermassignment.github.io\images\29.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix<br> Gravy-licious Turkey<br> & Gravy Flavors <br>Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+</div>
+
+<hr>
+ <div class="box">
+  <div class="box-1">
+  <img src="..\midtermassignment.github.io\images\30.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix Mixed <br> Grill Crunch With Chicken<br> & Flavors of Beef & <br>Salmon Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+   <div class="box-2">
+  <img src="..\midtermassignment.github.io\images\31.jpeg" alt="" width="200px" height="250px">
+   <h3>Friskies Party Mix Morning<br> Munch Crunch Egg,<br> Bacon & Cheese Flavors<br> Cat Treats</h3>
+    <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+     </div>
+    <div class="box-3">
+  <img src="..\midtermassignment.github.io\images\32.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix Wild<br>West Crunch Beef, <br>Liver & Cheddar Flavors <br>Cat Treats</h3>
+   <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+   </div>
+ <div class="box-4">
+<img src="..\midtermassignment.github.io\images\33.jpeg" alt="" width="200px" height="250px">
+  <h3>Friskies Party Mix Original <br>Crunch With Chicken<br> & Flavors of Liver<br> & Turkey Cat Treats</h3>
+ <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+ </div>
+</div>
+<hr>
+ 
+                                        <div class="box">
+                                            <div class="box-1">
+                                                <img src="..\midtermassignment.github.io\images\21.jpeg" alt="" width="200px" height="250px">
+                                                <h3>Whisker Lickin's Crunchy &<br> Yummy Chicken <br>Cat Treats</h3>
+                                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                                            </div>
+                                            <div class="box-2">
+                                                <img src="..\midtermassignment.github.io\images\22.jpeg" alt="" width="200px" height="250px">
+                                                <h3>Whisker Lickin's Crunchy<br> & Yummy Tuna <br>Flavor Cat Treats</h3>
+                                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                                            </div>
+                                            <div class="box-3">
+                                                <img src="..\midtermassignment.github.io\images\23.jpeg" alt="" width="200px" height="250px">
+                                                <h3>Purina DentaLife Chicken <br>Flavor Dental<br> Cat Treats</h3>
+                                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                                            </div>
+                                            <div class="box-4">
+                                                <img src="..\midtermassignment.github.io\images\24.jpeg" alt="" width="200px" height="250px">
+                                                <h3>Purina DentaLife Salmon <br>Flavor Dental<br> Cat Treats</h3>
+                                                <center><a href="#"><button class="btn">Buy Now</button></a></center><br>
+                                            </div>
+                                    
+                                                </div>
+                                                <hr>
+                                        
+
+
+
+
+        </div>
+        
+    
+    <div id="footer">
+        <div class="container">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+        </div>
+        <div class="list">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                
+            </ul>
+            </div>
+            <div class="copyright">
+                <center><p>The Master Cat Care @ 2024</p></center>
+            </div>
+       </div> 
+</body>
+</html>

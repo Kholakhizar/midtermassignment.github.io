@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right:45px;
+            list-style: none;
+            margin: 9px ;
+            margin-left: 20px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+            float: right;
+            padding: 8px 50px;
+        }
+
+        .navbar input{
+            border: 2.8px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 14px;
+        }
+
+
+        span{
+            color: rgb(255, 140, 0);
+           
+        }
+
+
+        .btn a{
+            float: right;
+            border-radius: 30px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 50px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 17px;
+            font-weight:bold;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 110px;
+            display: flex;
+            
+        }
+
+        .logo{
+            width: 20%;
+        }
+        .text2{
+            width: 60%;
+            color: white;
+        
+        }
+
+        .btn{
+            width: 20%;
+        }
+
+
+        .box {
+    display: flex;
+    margin: 60px 0px 10px 10px;
+    text-align: center;
+
+    }
+    h2 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+    .box-1
+    {
+        background-color: rgb(253, 201, 137);
+    padding: 10px;
+    margin-left: 30px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: black ;
+}
+
+.box button{
+    background-color:  rgb(53, 112, 114);
+    margin: 50px;
+    font-size: 26px;
+    color: white;
+    border-radius: 15px;
+   
+}
+
+
+.box button:hover{
+    background-color: rgb(81, 81, 81);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.yes
+    {
+        display: flex;
+    }
+.no
+    {width: 10%;}
+    .heading
+    {
+        background-color: rgb(170, 218, 219);
+        width: 80%;
+        justify-content: center;
+    align-items: center
+    }
+
+
+        #footer{
+            margin-top: 40px;
+            background-color: rgb(137, 172, 172);
+            height: 200px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container a{ font-size: 20px;
+            color: rgb(48, 84, 84);
+        }
+        .list a{ font-size: 20px;
+            color: rgb(82, 131, 131);
+        }
+       .container li{
+            display: inline;
+            list-style: none;
+            margin-left: 50px;
+            margin-top: 25px;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+           text-decoration:none ;
+           color: rgb(29, 31, 32);
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           transition: 0.4s ease-in-out;
+    }
+    .list li {
+           display: inline;
+           list-style: none;
+           margin-left: 50px;
+           margin-top: 25px;
+           font-size: 20px;
+           justify-content: center;
+           align-items: center;
+           text-decoration:none ;
+           color: rgb(29, 31, 32);
+           font-family: Impact, Haettenschweiler, 'Arial        Narrow Bold', sans-serif;
+           transition: 0.4s ease-in-out;
+    }
+    .copyright{
+           justify-content: center;
+           align-items: center;
+           color: rgb(55, 104, 104);
+    }
+    .list{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: aliceblue;
+    }
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .text h1{
+  font-size: 20px;
+}
+.text  p {
+font-size: 11px;
+}
+
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 3px;
+            list-style: none;
+            margin: 8px ;
+            margin-left: 10px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           display: none;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 5px;
+            height: 7px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 8px;
+   
+  }
+  .img {
+    display: none;
+  
+  }
+  .component-content {
+    font-size: 8px;
+  }
+  .for
+{
+  width: 90px ;
+  height:90px;
+}
+.text
+{
+  font-size: 10px;
+}
+.heading
+{
+  font-size: 14px;
+}
+.btn
+{
+  margin-left: 20px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 20px;
+            margin-right: 25px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 10px;
+            
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 70px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 5px;
+    background-color: gray;
+  height: 100px;
+
+}
+.container a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 9px;
+}
+.copyright
+{
+  font-size: 10px;
+}
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .text h1{
+  font-size: 24px;
+}
+.text  p {
+font-size: 14px;
+}
+  .search
+  {
+    display: none;
+  }
+
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 5px;
+            list-style: none;
+            margin: 10px ;
+            margin-left: 15px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           padding: 6px 16px;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 9px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 20px;
+   
+  }
+  .component-content {
+    font-size: 20px;
+  }
+  .for
+{
+  width: 90px ;
+  height: 70px;
+}
+.text
+{
+  font-size: 15px;
+}
+.heading
+{
+  font-size: 16px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 25px;
+            margin-right: 35px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 18px;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 90px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 15px;
+    background-color: gray;
+  height: 150px;
+
+}
+.container a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 12px;
+}
+.copyright
+{
+  font-size: 15px;
+}
+
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div id="header">
+          <nav class="navbar">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+                
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="    Search ">
+                </div>
+            </ul> 
+        </nav>
+
+
+        <div class="bar">
+            <div class="logo"> 
+    
+                    <img src="..\midtermassignment.github.io\images\cat logo copy 22.png" width="150px" height="140px">
+    
+                    </div>
+    
+                    <div class="text2">
+                    <center>
+                    <h1>Mastering <span> Cat </span> Care</h1>
+                    </center>
+                
+                    <center>
+                    <p>An &nbsp; Esay &nbsp; Guide &nbsp; To &nbsp; Winning &nbsp; Your &nbsp; Cat's  &nbsp;Heart</p>
+                    </center>
+    
+                    </div>
+                
+    
+                    <div class="btn" >
+    
+                <a href="donate.html">DONATE</a>
+    
+                    </div>
+                </div>
+             </div>
+    </header>
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <div id="section">
+<div class="imj">
+    <br>
+      <hr>
+    <div class="yes">
+      <div class="no"></div>
+      <div class="heading">
+      <center><h1>SERVICES WE PROVIDE</h1></center>
+      </div>
+      <div class="no"></div>
+    </div>
+    <hr><br>
+
+    <p>You are finding best services for your cats , you are at the right place . We provide variety of services for your cat .</p>
+</div>
+<div class="box">
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\Photo-depicting-various-essential-grooming-tools-for-Persian-cats-2.png" width="290px" alt="">
+        
+        <h2>Whisker Wonders Package</h2>
+        <p>
+            <ul>
+            <li>30-minute grooming session (nail <br> trim, brush, and bath)</li>
+            <li>Feeding and refresh of water <br>and litter</li>
+            <li> Playtime and socialization (15 min)</li>
+            <li>Health check and monitoring</li>
+            </ul>
+        </p>
+        <button> $49.99 </button>
+
+
+        
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\file-20210920-15-1nnfuap.jpg" width="320px" alt="">
+        
+        <h2>Purrfect Day Package</h2>
+<p>
+    <ul>
+    <li>Overnight boarding (up to 24 hr)</li>
+    <li>Feeding and refresh of water and litter</li>
+    <li>Playtime and socialization (60 min)</li>
+    <li>Health check and monitoring</li>
+    <li>Litter box cleaning and disinfecting</li>
+    </ul>
+    </p>
+    <button> $199.99 </button>
+    <br>
+
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\cat-eyeing-food.jpg" width="300px" height="200px" alt="">
+        
+        <h2>Meow Mansion Package</h2>
+<p>
+    <ul>
+    <li>Overnight boarding (up to 24 hr)</li>
+    <li>Feeding and refresh of water and litter</li>
+    <li>Playtime and socialization (60 min)</li>
+    <li>Health check and monitoring</li>
+    <li>Litter box cleaning and disinfecting</li>
+    <li>Administration of medication </li>
+    </ul>
+    </p>
+    <button> $199.99 </button>
+
+    </div>
+</div>
+<div class="box">
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\a5b0b9270c9e4a28a864b45969585bcf.jpeg" width="290px" alt="">
+       
+        <h2>Kitty Care Package</h2>
+        <p>
+            <ul>
+            <li>3 visits per week (30 min each) <br>for feeding, playtime, and <br>litter box maintenance</li>
+            <li>Health check and monitoring</li>
+            <li>Grooming session (nail trim,<br> brush, and bath) every 2 weeks</li>
+            </ul>
+        </p>
+        <button> $299.99 </button>
+
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\Fun-Ways-to-Help-Your-Cat-Get-Exercise.jpg" width="300px" height="160px">
+        <h2>Basic Care Package</h2>
+<p>
+    <ul>
+    <li>Twice a day with premium cat food</li>
+    <li>Daily scooping and weekly deep cleaning</li>
+    <li>Daily scooping and weekly deep cleaning</li>
+    <li>15 minutes of interactive play with toys.</li>
+    <li> Daily observation of eating, drinking,<br> and behavior.</li>
+    </ul>
+    </p>
+    <button> $49.99 </button>
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\persian-cat-grooming_slowmotiongli_Shutterstock.jpg" width="310px" height="">
+        <h2>Deluxe Care Package</h2>
+<p>
+    <ul>
+    <li>All Services in Basic Care Package plus</li>
+    <li> Weekly brushing to reduce shedding  <br>and hairballs.</li>
+    <li>Administering prescribed medications <br> or supplements.</li>
+    <li>Health check and monitoring</li>
+    <li>Interactive play session with<br> catnip or catnip-infused toys.</li>
+    <li>Weekly photos and updates<br> sent to the owner.</li>
+    </ul>
+    </p>
+    <button> $59.99</button>
+    </div>
+</div>
+<div class="box">
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\michu-hygiene-led-light-catdog-nail-clipper-2-0-version-michu-australia-12.jpg" width="260px" height="">
+        <h2> Premium Care Package</h2>
+        <p>
+            <ul>
+            <li>All Services in Deluxe Care <br> Package plus:</li>
+            <li>Includes nail trimming, ear <br> cleaning, and dental care.</li>
+            <li>Basic home security checks <br> (e.g., ensuring doors/windows are secure).</li>
+            <li>Tailored playtime based on your cat’s  preferences<br> (e.g., feather wands, laser pointers).</li>
+            <li> Detailed report on your cat’s <br> health,  and activities.</li>
+            <li>Coordination of vet visits if <br>needed (vet fees not included).</li>
+            </ul>
+        </p>
+        <button>$99.99 </button>
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\shutterstock_677740381-e1650916166782.jpg" alt="" width="330px" height="180px">
+        <h2>Vacation Package</h2>
+<p>
+    <ul>
+    <li>All services in the Basic Care<br> Package.</li>
+    <li>Includes evening and morning visits<br> or overnight stays.</li>
+    <li>Detailed report on your cat’s <br> health,  and activities.</li>
+    <li>Administering prescribed medications <br> or supplements.</li>
+    <li>Watering plants, collecting mail, and<br> basic household upkeep.</li>
+    <li>Tailored playtime based on your cat’s preferences
+        (e.g., feather wands, laser pointers).
+        Detailed report on your cat’s
+        health, and activities.
+        Coordination of vet visits if
+        needed (vet fees not included).
+        $99.99</li>
+    </ul>
+    </p>
+    <button> $59.99 </button>
+    </div>
+    <div class="box-1">
+        <img src="..\midtermassignment.github.io\images\Cats_and_Disinfectants_Using_Methods.jpg" alt="" width="300px" height="">
+        <h2>Additional Services (Optional)</h2>
+<p>
+    <ul>
+    <li>Transport to vet or grooming appointments</li>
+    <li>Special Diet Preparation For cats<br> with specific dietary needs.</li>
+    <li>Tailored playtime based on your cat’s preferences
+        (e.g., feather wands, laser pointers).
+        Detailed report on your cat’s
+        health, and activities.
+        Coordination of vet visits</li>
+    <li>Grooming session (nail trim,
+        brush, and bath) every 2 weeks</li>
+    <li>Additional 30 minutes of play</li>
+    </ul>
+    </p>
+
+
+
+
+    <button> $49.99</button>
+    <!-- <p> $49.99 </p> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div class="container">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+        </div>
+        <div class="list">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+              
+            </ul>
+            </div>
+            <div class="copyright">
+                <center><p>The Master Cat Care @ 2024</p></center>
+            </div>
+       </div>
+    
+    
+</body>
+</html>
