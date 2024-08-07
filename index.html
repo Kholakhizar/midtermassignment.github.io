@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 10px;
+            list-style: none;
+            margin: 9px ;
+            margin-left: 20px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+            float: right;
+            padding: 8px 50px;
+        }
+
+        .navbar input{
+            border: 2.8px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 14px;
+        }
+        .yes{
+          display: flex;}
+          .no
+    {width: 10%;}
+    .heading
+    {
+        background-color:rgb(170, 218, 219) ;
+        width: 80%;
+        justify-content: center;
+    align-items: center
+    }
+
+        span{
+            color: rgb(255, 140, 0);
+           
+        }
+        .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 50px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 17px;
+            font-weight:bold;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 110px;
+            display: flex;
+        }
+        .logo{
+            width: 25%;
+        }
+        .text{
+            width: 50%;
+        
+        }
+        .btn
+        {
+            width: 25%;
+        }
+        .box{
+            display: flex;
+            margin: 3px;
+        }
+        .box_13, .box_14{
+            font-size: 10px;
+            border: 2px solid black;
+            width: 33.5%;
+            /* height: 27%; */
+            padding: 10px;
+            margin-left: 110px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            background-color: rgb(253, 196, 127);
+        }
+        .box_15, .box_16{
+            font-size: 10px;
+            border: 2px solid #000000;
+            width: 33.5%;
+            /* height: 27%; */
+            padding: 10px;
+            margin-left: 110px;
+            border-radius: 10px;
+            background-color: rgb(253, 196, 127);
+        }
+
+
+
+        .box_1, .box_2, .box_3{
+            font-size: 10px;
+            border: 2px solid black;
+            width: 33.5%;
+            /* height: 27%; */
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 10px;
+            background-color: rgb(253, 196, 127);
+        }
+
+
+        #footer
+{
+    margin-top: 40px;
+    background-color: gray;
+  height: 200px;
+
+}
+p{
+    text-align: left;
+    justify-content: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a{ font-size: 20px;
+    color:    rgb(214, 214, 214);
+}
+.list a{ font-size: 20px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 15px;
+}
+.copyright
+{
+    justify-content: center;
+    align-items: center;
+    color:rgb(214, 214, 214);
+}
+.list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: aliceblue;}
+.whole{
+            border-radius: 15px;
+            border-color: black;
+            border-width: 3px;
+            border-style: dashed ;
+            margin-left: 180px;
+            margin-right: 180px;
+            padding-left: 150px;
+
+        }
+        .aboutcat h1{
+            text-align: center;
+            padding-right: 200px;
+        }
+
+
+        .table{
+            font-size: 20px;
+            padding-bottom: 30px;
+        }      
+       /* .btn{
+    width: 25%;
+    float: right;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-right: 20px;
+    
+   
+    }
+    .btn:focus{
+    outline: none;
+}
+        button
+    {
+        display: inline-block;
+        padding: 6px 24px;
+        background-color: rgb(255, 146, 14);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    button:hover
+    {
+        background-color: rgb(173, 102, 15);
+    }*/
+
+    /* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 3px;
+            list-style: none;
+            margin: 8px ;
+            margin-left: 10px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           display: none;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 5px;
+            height: 7px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 8px;
+   
+  }
+  .img {
+    display: none;
+  
+  }
+  .component-content {
+    font-size: 8px;
+  }
+  .for
+{
+  width: 90px ;
+  height: 70px;
+}
+.text
+{
+  font-size: 10px;
+}
+.heading
+{
+  font-size: 14px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 20px;
+            margin-right: 25px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 14px;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 70px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 5px;
+    background-color: gray;
+  height: 100px;
+
+}
+.container a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 9px;
+}
+.copyright
+{
+  font-size: 10px;
+}
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .search
+  {
+    display: none;
+  }
+
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 5px;
+            list-style: none;
+            margin: 10px ;
+            margin-left: 15px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           padding: 6px 16px;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 9px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 20px;
+   
+  }
+  .component-content {
+    font-size: 20px;
+  }
+  .for
+{
+  width: 90px ;
+  height: 70px;
+}
+.text
+{
+  font-size: 15px;
+}
+.heading
+{
+  font-size: 16px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 25px;
+            margin-right: 35px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 18px;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 90px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 15px;
+    background-color: gray;
+  height: 150px;
+
+}
+.container a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 12px;
+}
+.copyright
+{
+  font-size: 15px;
+}
+
+}
+  </style>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="    Search this website">
+                </div>
+                </ul> 
+                </nav>
+<div class="bar">
+        <div class="logo"> 
+            <img  src="..\images\cat logo copy 22.png" alt="" width="130px" height="120px">
+            </div>
+            <div class="text">
+                <center>
+                <h1>Mastering <span> Cat </span> Care</h1>
+                </center>
+            
+                <center>
+                <p class="size">An &nbsp; Easy &nbsp; Guide &nbsp; To &nbsp; Winning &nbsp; Your &nbsp; Cat's  &nbsp;Heart</p>
+                </center>
+            </div>
+             <div class="btn" class="">
+                <a href="donate.html">DONATE &#8594;</a>
+                </div>
+                </div>
+    </div>
+    <br><br><br><br>
+
+
+
+
+    <div id="section">
+        <br>
+        <hr>
+      <div class="yes">
+        <div class="no"></div>
+        <div class="heading">
+        <center><h1>GENERAL CAT CARE</h1></center>
+        </div>
+        <div class="no"></div>
+      </div>
+      <hr><br>
+      <p>Have you recently added a feline friend to 
+        your family? <br>Congratulations! We know you’ll
+         be thrilled to have your new cat in your home.
+          If you are considering adopting a cat, please 
+          visit your local shelter. We encourage you to
+           browse our directory of adoptable cats in your
+            area, or use our shelter finder to start your search.
+    <br>
+    <br>
+        Read on for useful tips for new cat parents,
+         and for those looking to brush up on their pet care skills.</p>
+        <br>
+
+
+        <ul>
+        <li type="square"><h1>Basic Care</h1></li>
+        </ul>
+        <br>
+
+        <div id="body2">
+
+            <div class="box">
+        
+            <div class="box_1">
+                <center>
+                <h1> Love With Cat</h1>
+                <img src="..\images\20-Most-Important-Cat-Care-Tips.jpg" width="230px" alt="">
+            </center>
+            </div>
+        
+            <div class="box_2">
+                <center>
+                <h1>Play With Cats </h1>
+                <img src="..\images\OD-CP-035_CatMattersOriginalContent_Post_6_FINAL (1).jpg" width="250px" alt="">
+            </center>
+            </div>
+        
+            <div class="box_3">
+                <center>
+                <h1>Cat's Take Care</h1>
+                <img src="..\images\cat-care_general-cat-care_body1-right.jpg" width="250px" alt="">
+            </center>
+            </div>
+        
+        </div>
+        
+        </div>
+        <br>
+        
+        <ul>
+            <li type="square"><h1>Feeding</h1></li></ul>
+            <p>We recommend purchasing high-quality, brand-name kitten or cat food. Your veterinarian will be able to assess your new cat or kitten and determine the best diet. Factors such as age, activity level and health make a difference in what and how much a cat should eat.</p>
+            <ol type="i">
+            <li><p>Cats require taurine, an essential amino acid, for heart and eye health. The food you choose should be balanced for the life stage of your cat or kitten. Properly balanced foods will contain taurine.</p></li>
+            <li><p>You will need to provide fresh, clean water at all times, and wash and refill your cat’s water bowls daily.</p></li>
+            <li><p>Treats should be no more than 5-10% of the diet.</p></li>
+            <li><p>Many people feed baby food to a cat or kitten who is refusing food or not feeling well  Please read labels carefully: If the baby food contains onion or garlic powder, your pet could be poisoned.</p></li>
+            <li><p>Take your pet to your veterinarian if signs of anorexia, diarrhea, vomiting or lethargy continue for more than two days.</p></li>
+            <li><p>Please visit our People Foods to Avoid Feeding Your Pets page for a list of off-limits items, as well as our Cat Nutrition Tips page for more information.</p></li></ol>
+             <br>
+            
+             <div id="body2">
+
+                <div class="box">
+            
+                <div class="box_1">
+                    <center>
+                    <h1> Nutritional Cat Food</h1>
+                    <img src="..\images\1000_F_207120391_EgnicihHt3DwOuuVvhSeZa9BNZP2zrQ3.jpg" width="200px" alt="">
+                </center>
+                </div>
+            
+                <div class="box_2">
+                    <center>
+                    <h1>Care Cat's Diet </h1>
+                    <img src="..\images\Visual-illustrates-a-Persian-kitten-with-foods-that-cater-to-its-unique-dietary-needs-1024x585.webp" width="250px" alt="">
+                </center>
+                </div>
+            
+                <div class="box_3">
+                    <center>
+                    <h1>Give Pure Water</h1>
+                    <img src="..\images\cat-care_general-cat-care_body3-left.jpg" width="250px" alt="">
+                </center>
+                </div>
+            
+            </div>
+            
+            </div>
+            <br>
+
+            <ul>
+                <li type="square">
+                    <h1> Grooming</h1>
+                </li>
+            </ul>
+               <p>Most cats stay relatively clean and rarely need a bath,
+                 but you should brush or comb your cat regularly. Frequent 
+                 brushing helps keep your cat's coat clean, reduces the
+                  amount of shedding and cuts down on the incidence of hairballs.
+                   Please visit our Cat Grooming Tips page for more information.</p>
+                <br>
+                <div id="body2">
+
+                    <div class="box">
+                
+                    <div class="box_1">
+                        <center>
+                        <h1> Brushing The Cat Hairs</h1>
+                        <img src="..\images\images (10).jpg" width="270px" alt="">
+                    </center>
+                    </div>
+                
+                    <div class="box_2">
+                        <center>
+                        <h1>Bath The Cat</h1>
+                        <img src="..\images\images (11).jpg" width="310px" alt="">
+                    </center>
+                    </div>
+                
+                    <div class="box_3">
+                        <center>
+                        <h1>Hair Trimming</h1>
+                        <img src="..\images\cat.png" width="250px" alt="">
+                    </center>
+                    </div>
+                
+                </div>
+                
+                </div>
+                <br>
+                <ul><li type="square"><h3>Litter Box</h3></li></ul>
+        <p>All indoor cats need a litter box, which should be placed in a quiet,
+             accessible location. In a multi-level home, one box per floor is
+              recommended. Avoid moving the box unless absolutely necessary,
+               but if you must do so, move the box just a few inches per day.
+                Keep in mind that cats won't use a messy, smelly litter box, 
+                so scoop solid wastes out of the box at least once a day. Dump
+                 everything, wash with a mild detergent and refill at least once
+                  a week; you can do this less frequently if using clumping 
+                  litter. Don't use ammonia, deodorants or scents, especially
+                   lemon, when cleaning the litter box. If your cat will
+                    not use a litterbox, please consult with your veterinarian. 
+                    Sometimes refusal to use a litter box is based on a medical
+                     condition that required treatment. Please visit our Litter
+                      Box Problems page for more information.  </p>
+
+                      <div id="body2">
+
+                        <div class="box">
+                    
+                        <div class="box_1">
+                            <center>
+                                <h1>  </h1>
+                            <img src="..\images\images (12).jpg" width="270px" alt="img">
+                        </center>
+                        </div>
+                    
+                        <div class="box_2">
+                            <center>
+                            <img src="..\images\7ff94dd1a8f67a1def43ef1ec096ec3647dc3f71_original.jpeg" width="230px" alt="img">
+                        </center>
+                        </div>
+                    
+                        <div class="box_3">
+                            <center>
+                                <h1>  </h1>
+                            <img src="..\images\images (13).jpg" width="270px" alt="img">
+                        </center>
+                        </div>
+                    
+                    </div>
+                    
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            
+            
+                   
+                    <div class="whole">
+                        
+                    <div class="aboutcat">
+                    <ul type="square"><h1><u>About:-</u></h1></ul>
+                    </div>
+            
+                    
+            
+                    <div class="table">
+                
+                    <table>
+                            <tr>
+                                
+                                <td><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About The Cat</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Lifespan <strong>:</strong></td>
+                                <td>12–18 years(Domesticated)</td>
+                            </tr>
+                            <tr>
+                                <td>Gestation period <strong>:</strong></td>
+                                <td> 65 days</td>
+                            </tr>
+                            <tr>
+                                <td>Scientific name <strong>:</strong></td>
+                                <td>Felis catus</td>
+                            </tr>
+                            <tr>
+                                <td>Class <strong>:</strong></td>
+                                <td> Mammalia</td>
+                            </tr>
+                            <tr>
+                                <td>Domain <strong>:</strong></td>
+                                <td>Eukaryota</td>
+                            </tr>
+                            <tr>
+                                <td>Family <strong>:</strong></td>
+                                <td>Felidae</td>
+                                
+                            </tr>
+                    </table>
+                </div>
+            
+            </div>
+            
+                    <br>
+                    <br>
+                    <br>
+                    <div id="body6">
+
+                        <div class="box">
+                    
+                        <div class="box_13">
+                            <center>
+                            <h1> Kitten (1-4 month)</h1>
+                            <img src="..\images\images (2).jpg" width="310px" alt="img">
+                        </center>
+                        </div>
+                    
+                        <div class="box_14">
+                            <center>
+                            <h1>12 – 18 years (Domesticated)</h1>
+                            <img src="..\images\images (5).jpg" width="300px" alt="img">
+                        </center>
+                        </div>
+                    
+                    </div>
+                    
+            
+            
+            
+            
+            
+                    <div class="box">
+            
+                        <div class="box_15">
+                            <center>
+                            <h1>Kitten (4-6 month)</h1>
+                            <img src="..\images\images (3).jpg" width="310px" alt="img">
+                        </center>
+                        </div>
+            
+                        <div class="box_16">
+                            <center>
+                            <h1>Kitten (7-9 month) Felis catus</h1>
+                            <img src="..\images\images (4).jpg" width="250px" alt="img">
+                        </center>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <br>
+            
+            
+            
+            
+            
+            
+            
+            
+                               
+
+            
+
+      </div>
+
+    <div id="footer">
+        <div class="container">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+        </div>
+        <div class="list">
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="service.html"> Services </a></li>
+                <li> <a href="contact(1).html"> Contact Us </a></li>
+                <li> <a href="product.html"> Products </a></li>
+                
+            </ul>
+            </div>
+            <div class="copyright">
+                <center><p>The Master Cat Care @ 2024</p></center>
+            </div>
+       </div>
+</body>
+</html>
