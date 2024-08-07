@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <style>
+    .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 10px;
+            list-style: none;
+            margin: 9px ;
+            margin-left: 20px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+            float: right;
+            padding: 8px 50px;
+        }
+
+        .navbar input{
+            border: 2.8px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 14px;
+        }
+
+        span{
+            color: rgb(255, 140, 0);
+           
+        }
+        .yes{
+          display: flex;}
+          .no
+    {width: 10%;}
+    .heading
+    {
+        background-color:rgb(170, 218, 219) ;
+        width: 80%;
+        justify-content: center;
+    align-items: center
+    }
+        .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 10px;
+            margin-top: 30px;
+            margin-right: 50px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 17px;
+            font-weight:bold;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 110px;
+            display: flex;
+        }
+        .logo{
+            width: 25%;
+        }
+        .text{
+            width: 50%;
+        
+        }
+        .btn
+        {
+            width: 25%;
+        }
+        #footer
+{
+    margin-top: 40px;
+    background-color: gray;
+  height: 200px;
+
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a{ font-size: 20px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 20px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 50px;
+ margin-top: 25px;
+ font-size: 20px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.copyright
+{
+    justify-content: center;
+    align-items: center;
+    color:rgb(214, 214, 214);
+}
+.list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: aliceblue;}
+.em
+{
+ font-size: 1.5rem;
+ text-align: center;
+ justify-content: center;
+ margin-left: 100px;
+ margin-right: 100px;
+ margin-bottom: 100px;
+ margin-top: 50px;
+}
+
+
+    .ab {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.hero-section {
+  margin-top: 10px;
+  background-image: url(..\images\Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.information {
+  /*text-align: center;*/
+  display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: black;
+  /*color: #616362;*/
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.025rem;
+  display: block;
+}
+.img {
+  margin: auto;
+  display: block;}
+  .strong-text {
+  margin: auto;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 350;
+  line-height: 4.2rem;
+  color: black;
+  margin: 55px, 0px, 55px, 0px;
+  letter-spacing: 0.25rem;
+  box-sizing: border-box;
+}
+h3 {
+  color: black;
+}
+.component-content {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: black;
+  margin-left: 25px;
+  margin-right: 25px;
+  letter-spacing: 0.2rem;
+  box-sizing: border-box;
+}
+h1 {
+  color: black;
+}
+.connect {
+  margin-bottom: 30px;
+  font-weight: 4rem;
+  letter-spacing: 0.2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background-color: antiquewhite;
+} /* Default styles (for larger screens) */
+.information {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+.img {
+  height: 350px;
+  width: 600px;
+}
+.component-content {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 3px;
+            list-style: none;
+            margin: 8px ;
+            margin-left: 10px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           display: none;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 5px;
+            height: 7px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 8px;
+   
+  }
+  .img {
+    display: none;
+  
+  }
+  .component-content {
+    font-size: 8px;
+  }
+  .for
+{
+  width: 90px ;
+  height: 70px;
+}
+.text
+{
+  font-size: 10px;
+}
+.heading
+{
+  font-size: 14px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 20px;
+            margin-right: 25px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 14px;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 70px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 5px;
+    background-color: gray;
+  height: 100px;
+
+}
+.container a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 10px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 20px;
+ margin-top: 10px;
+ font-size: 10px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 9px;
+}
+.copyright
+{
+  font-size: 10px;
+}
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .search
+  {
+    display: none;
+  }
+
+  .navbar{
+            background-color: rgb(71, 129, 131);
+            border-radius: 15px;
+        }
+
+        .navbar li{
+            float: left;
+            padding-right: 5px;
+            list-style: none;
+            margin: 10px ;
+            margin-left: 15px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .navbar li a:hover{
+            background-color: rgb(170, 218, 219);
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .search{
+           padding: 6px 16px;
+        }
+
+        .navbar input{
+            border: 1px solid rgb(137, 185, 187);
+            border-radius: 15px;
+            padding-right: 10px;
+            height: 9px;
+        }
+        .hero-section{
+          height: 250px;
+        }
+  .information {
+    font-size: 20px;
+   
+  }
+  .component-content {
+    font-size: 20px;
+  }
+  .for
+{
+  width: 90px ;
+  height: 70px;
+}
+.text
+{
+  font-size: 15px;
+}
+.heading
+{
+  font-size: 16px;
+}
+  .btn a{
+            float: right;
+            border-radius: 5px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            padding: 3px;
+            margin-top: 25px;
+            margin-right: 35px;
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color:  rgb(255, 146, 14);
+            font-family: Arial ;
+            font-size: 18px;
+
+        }
+
+
+        .btn a:hover{
+            background-color: rgb(110, 110, 110);
+            color: white;
+        }
+
+        .bar{
+            background-color:  rgb(71, 129, 131);
+            border-radius: 15px;
+            height: 90px;
+            display: flex;
+        }
+        #footer
+{
+    margin-top: 15px;
+    background-color: gray;
+  height: 150px;
+
+}
+.container a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.list a{ font-size: 15px;
+    color: rgb(214, 214, 214);
+}
+.container li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.list li
+{
+    display: inline;
+ list-style: none;
+ margin-left: 30px;
+ margin-top: 15px;
+ font-size: 15px;
+ justify-content: center;
+ align-items: center;
+text-decoration:none ;
+color: rgb(29, 31, 32);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition: 0.4s ease-in-out;
+}
+.size
+{
+    font-size: 12px;
+}
+.copyright
+{
+  font-size: 15px;
+}
+
+}
+
+/* Small laptops (up to 1024px) */
+@media (max-width: 1024px) {
+  .information {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .img {
+    height: 300px;
+    width: 90%;
+  }
+}
+  </style>
+  <body>
+    <div id="header">
+      <nav class="navbar">
+        <ul>
+          <li> <a href=""> Home </a></li>
+          <li> <a href="about.html"> About </a></li>
+          <li> <a href=""> Services </a></li>
+          <li> <a href="contact(1).html"> Contact Us </a></li>
+          <li> <a href="product.html"> Products </a></li>
+          
+
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="   Search this website">
+          </div>
+        </ul>
+      </nav>
+      <div class="bar">
+        <div class="logo"> 
+            <img   class="for"  src="..\images\cat logo copy 22.png" alt="" width="130px" height="120px">
+            </div>
+            <div class="text">
+                <center>
+                <h1>Mastering <span> Cat </span> Care</h1>
+
+                <p>An &nbsp; Easy &nbsp; Guide &nbsp; To &nbsp; Winning &nbsp; Your &nbsp; Cat's  &nbsp;Heart</p>
+                </center>
+            </div>
+             <div class="btn" class="">
+                <a href="donate.html">DONATE</a>
+                </div>
+                </div>
+      </div>
+
+    <div id="section">
+      <br>
+      <hr>
+    <div class="yes">
+      <div class="no"></div>
+      <div class="heading">
+      <center><h1>ABOUT US</h1></center>
+      </div>
+      <div class="no"></div>
+    </div>
+    <hr><br>
+
+    <div class="hero-section"></div>
+    <br>  <hr>
+    <div class="yes">
+      <div class="no"></div>
+      <div class="heading">
+      <center><h1>PIONEERING FOR CATS</h1></center>
+      </div>
+      <div class="no"></div>
+    </div>
+    <hr>
+    
+    <div class="information" style="display: block">
+      <p>
+        As people, we have a moral responsibility to protect cats from
+        suffering, both physically and mentally. It’s hard to overstate the lack
+        of feline knowledge that faced the charity in its early days. Over the
+        course of our history, we’ve built outstanding relationships with vets
+        and vet nurses/technicians, boarding catteries, breeders, other
+        charities, corporations, volunteers, owners and cat lovers and continue
+        to work with them to improve the physical health, mental wellbeing and
+        the lives of cats everywhere. Some of our achievements include:
+      </p>
+      <ul>
+        <li>
+          Funding the discovery of the cat flu viruses, which led to the
+          development of vaccines, changing the landscape of cat health
+        </li>
+        <li>
+          Providing insight to support owners in developing positive
+          relationships with their cats
+        </li>
+        <li>
+          Developing minimum standards for design and management of boarding
+          catteries to safeguard cats
+        </li>
+        <li>
+          Funding over 50 scholars, residents, researchers, lecturers, and
+          nurses to study feline medicine, illuminating the diagnosis and
+          treatment of illness
+        </li>
+      </ul>
+      <p>
+        To guide our work into the future across all these different areas, we
+        have developed our Cat Friendly Principles:
+      </p>
+      <ul>
+        <li>
+          Respect cats – respect the diversity of the species and understand the
+          individual cat
+        </li>
+        <li>
+          Keep cats well – give equal consideration to the cat’s physical health
+          and mental wellbeing
+        </li>
+        <li>
+          Do cats no harm – ensure cats are never worse off as a result of
+          people or their activities
+        </li>
+        <li>
+          Be solution driven for cats – find evidence-based, pragmatic and
+          sustainable solutions for cats
+        </li>
+      </ul>
+      <p>
+        <strong>Our vision is for a cat friendly world.</strong>
+        We strive to create knowledge and engaging learning experiences to
+        motivate change and inspire more people to understand and care for cats.
+        Our activities are grounded in evidence and experience – balancing the
+        tried and tested with the latest scientific research, and challenging
+        ignorance and misconceptions. Like cats, we remain ever-curious.
+      </p>
+    </div>
+
+    <div class="img">
+      <img src="..\images\cat friendly.jpeg" alt=""  width="600px" height="300px">
+    </div>
+      <br><hr>
+      <div class="yes">
+        <div class="no"></div>
+        <div class="heading">
+      <center><h1>OUR VISION</h1></center>
+      </div>
+      <div class="no"></div>
+      </div>
+      <hr><br>
+
+      <p>
+        <div class="em">
+         <center> A cat friendly world where each cat, owned and unowned, is treated
+          with respect, compassion and understanding.</center>
+        </div>
+      </p>
+      <br><hr>
+      <div class="yes">
+        <div class="no"></div>
+        <div class="heading">
+      <center><h1>OUR MISSION</h1></center>
+      </div>
+      <div class="no"></div>
+      </div>
+      <hr><br>
+      <p>
+        <div class="em">
+        <center>To enable more people to act in a cat friendly way to improve cat
+          welfare.</center>
+        </div>
+      </p>
+    
+    <div class="component-content">
+      <h1 style="text-align: center">
+        Keeping Pets Happy, Healthy, and Clean for Over 50 Years
+      </h1>
+      <p style="text-align: center">
+        As pet parents ourselves, everything we do at Four Paws is centered
+        around one thing: helping fellow pet parents and their furry friends
+        live their best lives together.
+      </p>
+      <p style="text-align: center">
+        Our team of dog &amp; cat lovers designs simple yet innovative pet
+        products to take the guesswork out of caring for your best friend. We
+        help you master potty time, conquer shedding season, and even keep your
+        pet's gut health in check so you can focus on the fun stuff, like
+        neighborhood walks and quality couch time.
+      </p>
+      <p style="text-align: center"
+      style="font-weight: normal">
+        Ever since creating Wee-Wee<sup>®</sup> Pads—America's original trusted
+        pads-back in 1970, we've spent more than 50 years providing pet parents
+        like you the most reliable solutions to keep pets
+          <strong>happy, healthy, and clean .</strong>
+        
+      </p>
+    </div>
+  </div>
+    <div id="footer">
+      <div class="container">
+              <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.google.com"><i class="fab fa-google"></i></a></li>
+              <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+      </div>
+      <div class="list">
+          <ul>
+              <li> <a href=""> Home </a></li>
+              <li> <a href="about.html"> About </a></li>
+              <li> <a href=""> Services </a></li>
+              <li> <a href="contact(1).html"> Contact Us </a></li>
+              <li> <a href="product.html"> Products </a></li>
+            
+          </ul>
+          </div>
+          <div class="copyright">
+              <center><p>The Master Cat Care @ 2024</p></center>
+          </div>
+     </div>
+    
+    
+   
+  </body>
+</html>
